@@ -1,7 +1,12 @@
 <div class="jumbotron center">
 <h1>Welcome to Trident</h1>
-<p>
-	<%= link_to "Log in", "http://pre12.deviantart.net/d29a/th/pre/i/2013/106/0/8/squidward__handsome_squidward_by_millegas-d61zr7o.jpg", class: 'btn btn-default btn-lg' %>
-	<%= link_to "Sign up", "https://pbs.twimg.com/media/B0MtVyHCIAAvyuH.jpg", class: 'btn btn-success btn-lg' %>
-</p>
+<% if user_signed_in? %>
+	# do something
+<% else %>
+	<p>
+		<%= link_to "Log in", new_user_session_path, class: 'btn btn-default btn-lg' %>
+		<%= link_to "Sign up", new_user_registration_path, class: 'btn btn-success btn-lg' %>
+	</p>
+<% end %>
+
 </div>
