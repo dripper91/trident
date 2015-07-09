@@ -10,8 +10,6 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass'
 gem 'devise', '~> 3.5.1'
-gem 'jdbc-sqlite3'
-gem 'activerecord-jdbcsqlite3-adapter'
 gem 'rake', '~> 10.4.2'
 
 
