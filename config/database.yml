@@ -12,7 +12,7 @@ default: &default
 development:
   <<: *default
   adapter: jdbcsqlite3
-  database: db/development.sqlite3
+  database: db/development.sqlite3 
   timeout: 5000
 
 # Warning: The database defined as "test" will be erased and

@@ -1,5 +1,5 @@
-source 'https://rubygems.org'
-ruby '2.2.2'
+source 'http://rubygems.org'
+ruby '2.1.5'
 
 gem 'rails', '4.1.8'
 gem 'sass-rails', '~> 4.0.3'
@@ -11,7 +11,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass'
 gem 'devise', '~> 3.5.1'
 gem 'jdbc-sqlite3'
-gem 'activerecord-jdbc-adapter'
+gem 'activerecord-jdbcsqlite3-adapter'
+gem 'rake', '~> 10.4.2'
 
 
 group :development, :test do	
@@ -25,4 +26,4 @@ end
 
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+gem 'tzinfo-data', platforms: [:mingw, :mswin]
